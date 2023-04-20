@@ -1,4 +1,3 @@
-// require('dotenv').config();
 const amqp = require('amqplib');
 const PlaylistService = require('./PlaylistService');
 const MailSender = require('./MailSender');

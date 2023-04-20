@@ -1,15 +1,14 @@
-// require('dotenv').config();
 const nodemailer = require('nodemailer');
 const config = require('./config');
 
 class MailSender {
   constructor() {
     this._transporter = nodemailer.createTransport({
-      host: config.smtp.host,
-      port: config.smtp.port,
+      host: config.mail.host,
+      port: config.mail.port,
       auth: {
-        user: config.smtp.user,
-        pass: config.smtp.pass,
+        user: config.mail.address,
+        pass: config.mail.pass,
       },
     });
   }

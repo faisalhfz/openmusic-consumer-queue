@@ -1,11 +1,11 @@
 require('dotenv').config();
 
 const config = {
-  smtp: {
-    host: process.env.SMTP_HOST,
-    port: process.env.SMTP_PORT,
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
+  mail: {
+    host: process.env.MAIL_HOST,
+    port: process.env.MAIL_PORT,
+    address: process.env.MAIL_ADDRESS,
+    pass: process.env.MAIL_PASSWORD,
   },
   rabbitMq: {
     server: process.env.RABBITMQ_SERVER,
